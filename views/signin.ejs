@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/assets/signin.css">
+    <title>Sign in</title>
+</head>
+<body>
+    <%- include('commonpage/heder'); %>
+    <h1>hello login page</h1>
+    <div class="titel"></div>
+    <div class="Main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()"><a href="http://localhost:8080">Register</a> </button>
+            </div>
+                <form id="login" class="input-group" action="/login" method="post">
+                    <input type="text" class="input-field" placeholder="Enter Email" name="email" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" name="password" required>
+                    <h6 class="check-box"></h6>
+
+                    <button type="submit" class="submit-btn">Login In</button>
+                </form>
+ 
+                
+        </div>
+    </div>
+</body>
+</html>
